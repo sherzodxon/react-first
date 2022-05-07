@@ -1,7 +1,6 @@
-import { products } from "../../data";
 import ProductItem from "./product-item";
 
-const Product =()=>{
+const Product =({products})=>{
     return(
         <section className="col-9">
         <div className="d-flex justify-content-between align-items-baseline">

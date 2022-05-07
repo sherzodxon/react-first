@@ -1,3 +1,5 @@
+import { products } from "../../data";
+import Benefits from "../benefits/benefits";
 
 const ProductItem =({id,title,img,price,model,benefits,addedDate})=>{
     return(
@@ -12,6 +14,7 @@ const ProductItem =({id,title,img,price,model,benefits,addedDate})=>{
                 <p className="card-text">{addedDate}</p>
         
                 <ul className="d-flex flex-wrap list-unstyled temp-list">
+                 {benefits.map((benefit)=>  <Benefits benefits={benefit}/>)}
                 </ul>
         
                 <div className="position-absolute top-0 end-0 d-flex temp-btn-div">

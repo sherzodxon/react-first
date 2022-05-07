@@ -1,3 +1,5 @@
+import Field from "../field/field";
+
 const Filter =()=>{
     return(
 
@@ -11,12 +13,14 @@ const Filter =()=>{
           <div className="mb-3">
             <label className="form-label">Price</label>
             <div className="row">
-              <div className="col-6">
+              {/* <div className="col-6">
                 <input type="number" className="form-control" id="from" min="0" aria-label="From" placeholder="From" />
               </div>
               <div className="col-6">
                 <input type="number" className="form-control" id="to" min="0" aria-label="To" placeholder="To" />
-              </div>
+              </div> */}
+              <Field label="From" id="from" type="number" placeholder="e.g.0" />
+              <Field label="To" id="to" type="number" placeholder="e.g.100" />
             </div>
           </div>
 

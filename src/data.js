@@ -1,4 +1,4 @@
-export const products = localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")) :[
+export const products = [
   {
     id: 123,
     title: "Redmi Note 10 Pro",
